@@ -170,7 +170,7 @@ button {
         width: 85vw;
         margin: 1rem 0;
         height: 100vh;
-        padding: 0 0 1rem;
+        /* padding: 0 0 1rem; */
     }
 
     .sub {
