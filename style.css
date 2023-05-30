@@ -2,17 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
-
-
 
 .container {
     width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -164,16 +161,14 @@ button {
     }
 }
 
-@media screen and(max-width:600px) {
+@media screen and (max-width:600px) {
+
     .container {
         width: 80vw;
-        flex-wrap: wrap;
-        position: absolute;
-        top: 0;
-        left: 0;
+        padding: 1rem 0 1rem;
     }
 
     .sub {
-        width: 40vw
+        width: 100vw
     }
 }
