@@ -2,48 +2,178 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 
-body {
-    background-image: linear-gradient(rgba(25, 25, 25, 0.7), rgba(19, 19, 36, 0.749), rgba(45, 50, 55, 0.9)), url("chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 
 .container {
-    width: 80vw;
-    margin: 0 auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub {
+    width: 24vw;
     padding: 1rem;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    height: 350px;
+
 }
 
-h1,
-h2 {
+.result {
+    background-image: linear-gradient(rgba(19, 5, 146, 0.601), rgb(100, 56, 243));
+    color: rgba(228, 223, 223, 0.741);
     text-align: center;
+    padding: 1.5rem;
+
 }
 
-h2 {
-    margin-bottom: 3rem;
+.result>h5 {
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
 }
 
-p span {
-    float: right;
+.status {
+    background-image: linear-gradient(rgba(19, 5, 146, 0.601), rgb(100, 56, 243));
+
+    border-radius: 50%;
+    width: 150px;
+    aspect-ratio: 1/1;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 1px;
 }
 
-p {
-    margin-bottom: 4rem;
+.status span {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: -1.5rem;
 }
 
-@media screen and (max-width:600px) {
-    body {
-        background-position: right;
+.result h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.summary {
+    padding: 1rem;
+
+}
+
+h4,
+.sum-contain {
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.sum-contain {
+    letter-spacing: 0rem;
+
+}
+
+.sum-contain div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    height: 45px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.fade {
+    color: grey;
+}
+
+i {
+    margin-right: 10px;
+
+}
+
+.r1 {
+    background: rgba(255, 0, 0, 0.317);
+    padding: 0 1rem;
+}
+
+.r1 .results {
+    color: red;
+}
+
+.r2 {
+    background: rgba(242, 242, 185, 0.374);
+    padding: 0 1rem;
+}
+
+.r2 .results {
+    color: gold;
+}
+
+.r3 {
+    background: rgba(135, 231, 135, 0.337);
+    padding: 0 1rem;
+}
+
+.r3 .results {
+    color: green;
+}
+
+.r4 {
+    background: rgb(241, 220, 241);
+    padding: 0 1rem;
+}
+
+.r4 .results {
+    color: purple;
+
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 25px;
+    outline: 0;
+    border: 0;
+    color: white;
+    background: darkslategray;
+}
+
+@media screen and (max-width:1020px) {
+    .container {
+        width: 70vw
     }
 
+    .sub {
+        width: 34vw
+    }
+}
+
+@media screen and(max-width:600px) {
     .container {
-        width: 95vw;
-        height: 100vh;
-        padding: 2rem 0;
+        width: 80vw;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .sub {
+        width: 40vw
     }
 }
